@@ -1,0 +1,23 @@
+---
+roles:
+  - name: geerlingguy.repo-epel
+  - name: mamono210.locale
+    src: https://github.com/ansible-roles-mamono210/locale.git
+  - name: mamono210.httpd_install
+    src: https://github.com/ansible-roles-mamono210/httpd_install.git
+  - name: mamono210.passenger
+    src: https://github.com/ansible-roles-mamono210/passenger.git
+  - name: mamono210.redmine_plugins
+    src: https://github.com/ansible-roles-mamono210/redmine_plugins.git
+  - name: mamono210.ruby
+    src: https://github.com/ansible-roles-mamono210/ruby.git
+  - name: mamono210.swapfile
+    src: https://github.com/ansible-roles-mamono210/swapfile.git
+  - name: mamono210.timezone
+    src: https://github.com/ansible-roles-mamono210/timezone.git
+  - name: robertdebock.bootstrap
+  - name: robertdebock.locale
+  - name: robertdebock.reboot
+  - name: robertdebock.selinux
+  - name: mamono210.postgresql
+    src: https://github.com/ansible-roles-mamono210/postgresql.git

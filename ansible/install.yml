@@ -1,0 +1,17 @@
+---
+- name: Install libraries for testing Ansible playbook
+  hosts: all
+  become: true
+  vars:
+    selinux_state: disabled
+
+  roles:
+    - role: geerlingguy.repo-epel
+    - role: robertdebock.selinux
+    - role: mamono210.locale
+    - role: mamono210.timezone
+    - role: mamono210.httpd_install
+    - role: mamono210.postgresql
+    - role: mamono210.ruby
+    - role: mamono210.swapfile
+    - role: mamono210.passenger
