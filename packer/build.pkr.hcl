@@ -31,6 +31,11 @@ variable "source_ami_id" {
   default             = ""
 }
 
+variable "ssh_username" {
+  type                = string
+  default             = ""
+}
+
 variable "tag_name" {
   type                = string
   default             = ""
@@ -46,7 +51,7 @@ source "amazon-ebs" "centos" {
     delete_on_termination = true
   }
   source_ami          = "${var.source_ami_id}"
-  ssh_username        = "centos"
+  ssh_username        = "${var.ssh_username}"
   tags = {
     Name              = "${var.tag_name}"
   }
