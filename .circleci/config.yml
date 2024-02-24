@@ -81,12 +81,6 @@ workflows:
             - trailing-whitespace
       - packer:
           context: AWS_OPENID_CONNECT_TOKENS
-          ami-name: 'centos-stream8'
-          ssh-username: 'centos'
-          requires:
-            - yamllint
-      - packer:
-          context: AWS_OPENID_CONNECT_TOKENS
           ami-name: 'centos-stream9'
           ssh-username: 'ec2-user'
           requires:
